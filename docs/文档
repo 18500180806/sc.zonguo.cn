@@ -1,0 +1,18 @@
+Wetech-Admin 是基于 Spring Boot 2.0 + Mybatis 的轻量级后台管理系统，适用于中小型项目的管理后台，
+支持按钮级别的权限控制，系统具有最基本的用户管理、角色管理、资源管理
+、组织机构管理、系统日志、代码生成器等通用性功能，
+企业或个人可直接在此基础上进行开发，扩展，添加各自的需求和业务功能
+
+ 步骤：
+
+
+ 创建数据库wetech_admin，数据库编码为UTF-8
+依次执行schema.sql 、 data.sql 文件  初始化数据
+修改application-dev.yml 、 application-prd.yml文件，更新MySQL账号和密码和数据库的路径
+  application.yml  中     active:  # 设置激活的环境   prd 正式版本  dev  测试版
+  运行Maven命令mvn install   更新maven
+  运行WetechAdminApplication类   开始启动项目
+  项目访问路径：http://localhost:8888/wetech-admin
+  账号密码：admin/123456   添加账号在管理系统内部添加 可以向下级配分注册账号的权限，用于给下属注册账号使用
+           wetech-admin/static     该路径下的所有接口可以直接访问  剩下的都会被ShiroConfig 中的过滤器拦截
+             http://localhost:8080/wetech-admin/static/wxuser/logins?code=    为微信授权登录的 路径

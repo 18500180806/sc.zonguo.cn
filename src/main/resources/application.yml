@@ -7,7 +7,7 @@ spring:
     ansi:
       enabled: ALWAYS # 输出带颜色的日志信息
   profiles:
-    active: dev # 设置激活的环境
+    active: prd # 设置激活的环境
 
 mybatis: # mybatis 配置
   mapper-locations: classpath:mybatis/mapper/*.xml

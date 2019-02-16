@@ -23,9 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.Arrays;
 
-/**
- * @author cjbi
- */
+
 @Controller
 @RequestMapping("/user")
 public class UserController extends BaseController {

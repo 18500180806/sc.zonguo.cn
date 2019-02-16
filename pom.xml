@@ -171,6 +171,17 @@
 			<!-- 可选依赖 -->
 			<optional>true</optional>
 		</dependency>
+		<!-- 微信授权登录 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.44</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.6</version>
+		</dependency>
 	</dependencies>
 
 	<build>
